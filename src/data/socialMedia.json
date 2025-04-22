@@ -1,0 +1,21 @@
+
+[
+  {
+    "id": 1,
+    "name": "GitHub",
+    "url": "",
+    "logo": ""
+  },
+  {
+    "id": 2,
+    "name": "Gmail", 
+    "url": "",
+    "logo": ""
+  },
+  {
+    "id": 3,
+    "name": "Telegram",
+    "url": "",
+    "logo": ""
+  }
+]
