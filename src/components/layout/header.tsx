@@ -24,5 +24,5 @@ export default function Header() {
     setDay(`${greeting} ${data}`);
   }, [data]);
 
-  return <div className="text-2xl flex justify-center">{day}</div>;
+  return <div className="text-2xl flex justify-center ">{day}</div>;
 }

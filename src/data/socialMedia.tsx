@@ -13,7 +13,7 @@ function SocialMedia() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold">Проекты</h1>
+      <h1 className="text-2xl font-bold">Связаться со мной</h1>
       <ul className="list-disc">
         {socials.map((social) => (
           <li key={social.id}>

@@ -638,19 +638,6 @@
   },
   {
     "id": 50,
-    "title": "Детский велосипед",
-    "description": "Детский велосипед с 3 скоростями, колеса 20 дюймов.",
-    "price": 199.99,
-    "currency": "USD",
-    "inStock": true,
-    "category": "Детские товары",
-    "brand": "Schwinn",
-    "rating": 4.6,
-    "reviewsCount": 134,
-    "image": "/public/images/data/products/kidsbike.jpg"
-  },
-  {
-    "id": 51,
     "title": "Микрофон USB",
     "description": "Студийный USB-микрофон для записи и стриминга.",
     "price": 99.99,
@@ -663,7 +650,7 @@
     "image": "/public/images/data/products/microphone.jpg"
   },
   {
-    "id": 52,
+    "id": 51,
     "title": "Горшок для цветов",
     "description": "Керамический горшок для цветов с поддоном.",
     "price": 24.99,
@@ -676,7 +663,7 @@
     "image": "/public/images/data/products/flowerpot.jpg"
   },
   {
-    "id": 53,
+    "id": 52,
     "title": "Клавиатура механическая",
     "description": "Игровая механическая клавиатура с RGB-подсветкой.",
     "price": 89.99,
@@ -689,7 +676,7 @@
     "image": "/public/images/data/products/keyboard.jpg"
   },
   {
-    "id": 54,
+    "id": 53,
     "title": "Ковер домашний",
     "description": "Мягкий ковер для гостиной, размер 200x300 см.",
     "price": 149.99,
@@ -702,7 +689,7 @@
     "image": "/public/images/data/products/carpet.jpg"
   },
   {
-    "id": 55,
+    "id": 54,
     "title": "Бритва электрическая",
     "description": "Электрическая бритва с 3 плавающими головками.",
     "price": 79.99,
@@ -715,7 +702,7 @@
     "image": "/public/images/data/products/shaver.jpg"
   },
   {
-    "id": 56,
+    "id": 55,
     "title": "Термос",
     "description": "Термос из нержавеющей стали, объем 1 литр.",
     "price": 34.99,
@@ -728,20 +715,7 @@
     "image": "/public/images/data/products/thermos.jpg"
   },
   {
-    "id": 57,
-    "title": "Детский конструктор",
-    "description": "Конструктор из 250 деталей для детей от 6 лет.",
-    "price": 29.99,
-    "currency": "USD",
-    "inStock": true,
-    "category": "Детские товары",
-    "brand": "LEGO",
-    "rating": 4.9,
-    "reviewsCount": 421,
-    "image": "/public/images/data/products/constructor.jpg"
-  },
-  {
-    "id": 58,
+    "id": 56,
     "title": "Мыло жидкое",
     "description": "Жидкое мыло с ароматом лаванды, 500 мл.",
     "price": 7.99,
@@ -754,7 +728,7 @@
     "image": "/public/images/data/products/soap.jpg"
   },
   {
-    "id": 59,
+    "id": 57,
     "title": "Лампа настольная",
     "description": "LED лампа с регулируемой цветовой температурой.",
     "price": 59.99,
@@ -767,7 +741,7 @@
     "image": "/public/images/data/products/ledlamp.jpg"
   },
   {
-    "id": 60,
+    "id": 58,
     "title": "Набор для барбекю",
     "description": "Набор из 5 предметов для приготовления барбекю.",
     "price": 49.99,

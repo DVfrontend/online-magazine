@@ -7,8 +7,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-grow container mx-auto">
-        <div className="mt-5">{children}</div>
+      <main className="flex-grow container mx-auto mt-10">
+        <div className="mt-10">{children}</div>
       </main>
       <Footer />
     </div>

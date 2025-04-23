@@ -20,8 +20,8 @@ const links: SocialLink[] = [
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-neutral-900 text-white py-4">
-      <div className="flex justify-center gap-4 mb-4">
+    <footer className="bg-neutral-900 text-white py-4 bg-black">
+      <div className="flex justify-center gap-4 mb-4 ">
         {links.map(({ id, href, icon, name }) => (
           <Link key={id} href={href} target="_blank" rel="noopener noreferrer" className="">
             <Image src={icon} alt={name} width={25} height={25} />
