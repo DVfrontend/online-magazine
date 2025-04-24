@@ -1,9 +1,21 @@
-import Card from "@/components/layout/card"
+'use client'
 
-export default function ForHome() {
+import { useEffect, useState } from "react";
+import Products from "@/data/products";
+import data from "@/data/products.json";
+import type { Product } from "@/types";
+
+export default function Tools() {
+  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+
+  useEffect(() => {
+    const filtered = data.filter((product) => product.category === "Для дома");
+    setFilteredProducts(filtered);
+  }, []);
+
   return (
-    <>
-      
-    </>
-  )
+    <div>
+      <Products products={filteredProducts} />
+    </div>
+  );
 }

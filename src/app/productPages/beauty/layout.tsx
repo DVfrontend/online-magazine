@@ -4,7 +4,7 @@ import type { LayoutProps } from '@/types';
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      <h1>Красота и гигиена</h1>
+      <h1 className='text-3xl'>Красота и гигиена</h1>
       {children}
     </>
   );

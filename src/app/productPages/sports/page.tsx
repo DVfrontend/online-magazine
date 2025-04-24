@@ -1,10 +1,21 @@
-// import Card from "@/components/layout/card"
+'use client'
+
+import { useEffect, useState } from "react";
+import Products from "@/data/products";
+import data from "@/data/products.json";
+import type { Product } from "@/types";
 
 export default function Sports() {
+  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+
+  useEffect(() => {
+    const filtered = data.filter((product) => product.category === "Спорт");
+    setFilteredProducts(filtered);
+  }, []);
+
   return (
-    <div className="sports">
-      <h1>Спортивные товары</h1>
-      {/* Здесь будет список товаров из категории Спорт */}
+    <div>
+      <Products products={filteredProducts} />
     </div>
-  )
+  );
 }

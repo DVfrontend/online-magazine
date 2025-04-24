@@ -1,10 +1,21 @@
-import Card from "@/components/layout/card"
+'use client'
 
-export default function Accessories() {
+import { useEffect, useState } from "react";
+import Products from "@/data/products";
+import data from "@/data/products.json";
+import type { Product } from "@/types";
+
+export default function Tools() {
+  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+
+  useEffect(() => {
+    const filtered = data.filter((product) => product.category === "Аксессуары");
+    setFilteredProducts(filtered);
+  }, []);
+
   return (
-    <div className="accessories">
-      <h1>Аксессуары</h1>
-      {/* Здесь будет список товаров из категории Аксессуары */}
+    <div>
+      <Products products={filteredProducts} />
     </div>
-  )
+  );
 }

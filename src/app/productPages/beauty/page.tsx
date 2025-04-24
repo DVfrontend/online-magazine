@@ -1,10 +1,21 @@
-import Card from "@/components/layout/card"
+'use client'
 
-export default function Beauty() {
+import { useEffect, useState } from "react";
+import Products from "@/data/products";
+import data from "@/data/products.json";
+import type { Product } from "@/types";
+
+export default function Tools() {
+  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+
+  useEffect(() => {
+    const filtered = data.filter((product) => product.category === "Гигиена/Красота");
+    setFilteredProducts(filtered);
+  }, []);
+
   return (
-    <div className="beauty">
-      <h1>Гигиена и косметика</h1>
-      {/* Здесь будет список товаров из категории Гигиена/Красота */}
+    <div>
+      <Products products={filteredProducts} />
     </div>
-  )
+  );
 }

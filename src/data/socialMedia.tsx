@@ -3,6 +3,7 @@
 import data from "@/data/socialMedia.json";
 import { useEffect, useState } from "react";
 import type { Socials } from "@/types";
+import Link from "next/link";
 
 function SocialMedia() {
   const [socials, setSocials] = useState<Socials[]>([]);
@@ -17,7 +18,7 @@ function SocialMedia() {
       <ul className="list-disc">
         {socials.map((social) => (
           <li key={social.id}>
-            {social.logo}<b>{social.name}</b> — {social.url}
+            <Link href={social.url}>{social.logo}<b>{social.name}</b></Link>
           </li>
         ))}
       </ul>
