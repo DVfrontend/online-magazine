@@ -14,8 +14,9 @@ type Nav = {
 const nav: Nav[] = [
   { id: 1, title: "Дом", path: "/" },
   { id: 2, title: "Категории", path: "/productPages" },
-  { id: 3, title: "Связь", path: "/contact" },
-  { id: 4, title: "Про меня", path: "/about" },
+  { id: 3, title: "Корзина", path: "/cart" },
+  { id: 4, title: "Связь", path: "/contact" },
+  { id: 5, title: "Про меня", path: "/about" },
 ];
 
 export default function Navbar() {

@@ -1,6 +1,6 @@
 import "./globals.scss";
 import { Toaster } from 'sonner';
-import Layout from "@/components/layout/layout";
+import Layout from "@/components/layout/Layout";
 
 export default function RootLayout({
   children,

@@ -1,7 +1,7 @@
 // import Carousel from "@/components/layout/carousel";
 // 'use client'
-import ButtonBuy from "@/components/layout/buttonBuy";
-import Card from "@/components/layout/card";
+import ButtonBuy from "@/components/ui/buttonBuy";
+import Card from "@/components/ui/card";
 
 export default function Home() {
   // const handleClick = () => {

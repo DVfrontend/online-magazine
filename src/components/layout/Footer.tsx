@@ -14,7 +14,7 @@ const links: SocialLink[] = [
   { id: 2, href: "https://github.com/Daniel2009Daniel", icon: "/icons/github.png",name: "github" },
   { id: 3, href: "https://linkedin.com", icon: "/icons/linkedin.png", name: "linkedin" }, // no
   { id: 4, href: "https://t.me/TSXplorer", icon: "/icons/telegram.png", name: "telegram" },
-  { id: 5, href: "https://wa.me/your_number", icon: "/icons/whatsapp.png", name: "whatsapp" }, //no
+  { id: 5, href: "https://wa.me/995568981657", icon: "/icons/whatsapp.png", name: "whatsapp" }, //no
   { id: 6, href: "https://x.com/VartanovDaniel", icon: "/icons/twitter.png", name: "Twitter"}
 ];
 
@@ -29,8 +29,7 @@ const Footer: React.FC = () => {
         ))}
       </div>
       <div className="text-center text-sm">
-        <p>&copy;{new Date().getDate()}/{new Date().getMonth() + 1}/{new Date().getFullYear()} DV product. Все права защищены.</p>
-        <p>Сайт находится в разработке. Контент и данные регулярно обновляются и дополняются. Следите за изменениями — впереди много нового!</p>
+        <p>&copy;{new Date().getDate()}/{new Date().getMonth() + 1}/{new Date().getFullYear()} DV product.</p>
       </div>
     </footer>
   );
