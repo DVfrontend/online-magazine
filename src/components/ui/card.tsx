@@ -1,14 +1,10 @@
 // import styles from "../ui/card.module.scss"
 // import ButtonInfo from "./buttonInfo"
 
-'use client '
+"use client ";
 // import Image from "next/image";
-// import Products from "@/data/products"; 
+// import Products from "@/data/products";
 
 export default function Card() {
-  return (
-    <>
-      {/* <Products /> */}
-    </>
-);
+  return <>{/* <Products /> */}</>;
 }

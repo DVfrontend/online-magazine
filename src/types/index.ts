@@ -10,27 +10,29 @@ export type Product = {
   rating: number;
   reviewsCount: number;
   image: string;
+  products: string
 };
 
 export type Carousel = {
-  id: number,
-  img?: string,
-  title: string,
-}
+  id: number;
+  img?: string;
+  title: string;
+};
 
 export type Socials = {
-  name: string,
-  id: number,
-  url: string,
-  logo?: string
-}
+  name: string;
+  id: number;
+  url: string;
+  logo?: string;
+};
 
 export type LayoutProps = {
   children: React.ReactNode;
-}
+};
 
 export type Navigation = {
   id: number;
   title: string;
   path: string;
-}
+};
+

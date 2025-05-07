@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useEffect, useState } from "react";
 import Products from "@/data/products";
@@ -9,7 +9,9 @@ export default function Tools() {
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
 
   useEffect(() => {
-    const filtered = data.filter((product) => product.category === "Гигиена/Красота");
+    const filtered = data.filter(
+      (product) => product.category === "Гигиена/Красота",
+    );
     setFilteredProducts(filtered);
   }, []);
 

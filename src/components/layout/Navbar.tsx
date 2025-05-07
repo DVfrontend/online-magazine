@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import styles from "../ui/navbar.module.scss";
+import styles from "@/styles/navbar.module.scss";
 import Image from "next/image";
 
 type Nav = {
@@ -13,10 +13,8 @@ type Nav = {
 
 const nav: Nav[] = [
   { id: 1, title: "Дом", path: "/" },
-  { id: 2, title: "Категории", path: "/productPages" },
-  { id: 3, title: "Корзина", path: "/cart" },
-  { id: 4, title: "Связь", path: "/contact" },
-  { id: 5, title: "Про меня", path: "/about" },
+  { id: 2, title: "Корзина", path: "/cart" },
+  { id: 3, title: "Про меня", path: "/about" },
 ];
 
 export default function Navbar() {

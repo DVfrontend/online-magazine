@@ -1,18 +1,22 @@
-'use client'
+"use client";
 
 import type { Product } from "@/types";
+import { useEffect, useState } from "react";
+import data from './product.json'
 
-interface ProductsProps {
-  products: Product[];
-}
+function Products() {
+  const [products, setProducts] = useState<Product[]>([]);
 
-function Products({ products }: ProductsProps) {
+  useEffect(() => {
+    setProducts(data);
+  }, []);
   return (
     <div>
       <ul className="list-disc">
         {products.map((product) => (
           <li key={product.id}>
-            <b>{product.title}</b> — {product.description} {product.price} {product.currency}
+            <b>{product.title}</b> — {product.description} {product.price}{" "}
+            {product.currency}
           </li>
         ))}
       </ul>

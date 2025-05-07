@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import data from "@/data/socialMedia.json";
 import { useEffect, useState } from "react";
@@ -18,7 +18,10 @@ function SocialMedia() {
       <ul className="list-disc">
         {socials.map((social) => (
           <li key={social.id}>
-            <Link href={social.url}>{social.logo}<b>{social.name}</b></Link>
+            <Link href={social.url}>
+              {social.logo}
+              <b>{social.name}</b>
+            </Link>
           </li>
         ))}
       </ul>
