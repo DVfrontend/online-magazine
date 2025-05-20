@@ -12,9 +12,8 @@ type Nav = {
 };
 
 const nav: Nav[] = [
-  { id: 1, title: "Дом", path: "/" },
-  { id: 2, title: "Корзина", path: "/cart" },
-  { id: 3, title: "Про меня", path: "/about" },
+  { id: 1, title: "Корзина", path: "/cart" },
+  { id: 2, title: "Про меня", path: "/about" },
 ];
 
 export default function Navbar() {
@@ -34,6 +33,16 @@ export default function Navbar() {
         </Link>
 
         <div className="flex space-x-3 text-right">
+          <Link href={"/"}>
+            <span
+              className={`${
+                pathname === "/" ? styles.active : undefined
+              } ease-in duration-300 hover:shadow-white hover:shadow-2xl hover:border-b mx-3 py-1 hover:border-b-white hover:shadow-b border-white hover:shadow-[0_2px_0_0_rgb(255,255,255)] transition-shadow`}
+            >
+              Дом
+            </span>
+          </Link>
+
           {nav.map(({ id, title, path }) => (
             <Link key={id} href={path} className="text-right">
               <span

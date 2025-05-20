@@ -10,13 +10,6 @@ export type Product = {
   rating: number;
   reviewsCount: number;
   image: string;
-  products: string
-};
-
-export type Carousel = {
-  id: number;
-  img?: string;
-  title: string;
 };
 
 export type Socials = {
@@ -35,4 +28,3 @@ export type Navigation = {
   title: string;
   path: string;
 };
-

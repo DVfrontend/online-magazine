@@ -1,10 +1,12 @@
-import Product from "./productPages/page";
-// import type { Navigation } from "@/types"; 
+import Category from "./product-pages/page";
+import Products from "@/components/ui/products";
+import Carousel from "@/components/ui/carousel";
 export default function Home() {
   return (
     <>
-      <h1 className="text-4xl font-semibold">df</h1>
-      <Product />
+      <Carousel />
+      <Category />
+      <Products />
     </>
   );
 }

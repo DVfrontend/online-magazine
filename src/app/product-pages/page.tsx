@@ -1,21 +1,20 @@
-// import styles from './categories.module.scss'
 import type { Navigation } from "@/types";
-import Products from "@/data/products"
 import Link from "next/link";
 
 const nav: Navigation[] = [
-  { id: 1, title: "Инструменты", path: "/productPages/tools" },
-  { id: 2, title: "Спорт", path: "/productPages/sports" },
-  { id: 3, title: "Продукты", path: "/productPages/products" },
-  { id: 4, title: "Бытовая техника", path: "/productPages/houseHold" },
-  { id: 5, title: "Для дома", path: "/productPages/forHome" },
-  { id: 6, title: "Электроника", path: "/productPages/electronics" },
-  { id: 7, title: "Одежда", path: "/productPages/clothing" },
-  { id: 8, title: "Красота", path: "/productPages/beauty" },
-  { id: 9, title: "Аксессуары", path: "/productPages/accessories" },
+  { id: 1, title: "Инструменты", path: "/product-pages/tools" },
+  { id: 2, title: "Спорт", path: "/product-pages/sports" },
+  { id: 3, title: "Продукты", path: "/product-pages/products" },
+  { id: 4, title: "Бытовая техника", path: "/product-pages/house-hold" },
+  { id: 5, title: "Для дома", path: "/product-pages/for-home" },
+  { id: 6, title: "Электроника", path: "/product-pages/electronics" },
+  { id: 7, title: "Одежда", path: "/product-pages/clothing" },
+  { id: 8, title: "Красота", path: "/product-pages/beauty" },
+  { id: 9, title: "Аксессуары", path: "/product-pages/accessories" },
+  { id: 10, title: "Игры", path: "/product-pages/games" },
 ];
 
-export default function Product() {
+export default function Category() {
   return (
     <div>
       <div className="p-4 mx-auto">
@@ -41,7 +40,6 @@ export default function Product() {
         </div>
         <h2 className="text-2xl font-bold m-3">Все товары</h2>
       </div>
-      <Products />
     </div>
   );
 }
